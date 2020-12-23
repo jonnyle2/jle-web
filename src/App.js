@@ -8,10 +8,10 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <Navbar expand='sm'>
+      <Navbar expand='sm' fixed='top'>
         <Navbar.Toggle aria-controls='basic-navbar-nav'/>
         <Navbar.Collapse>
-          <Nav>
+          <Nav className='m-auto'>
             <Nav.Item><NavLink exact to='/'>Home</NavLink></Nav.Item>
             <Nav.Item><NavLink to='/about'>About</NavLink></Nav.Item>
             <Nav.Item><NavLink to='/contact'>Contact</NavLink></Nav.Item>
