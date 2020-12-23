@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+html {
+  background-color: #4B5267;
+}
+
 #root {
   color: white;
   background-color: #4B5267;
