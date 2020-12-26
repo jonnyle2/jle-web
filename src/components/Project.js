@@ -1,15 +1,26 @@
+import PropTypes from 'prop-types';
+
 function Project(props){
-  const techList = props.techList.map((tech) =>
-    <li>{tech}</li>
+  const list = props.techList.map((tech, index) =>
+    <li key={index}>{tech}</li>
   );
   
   return(
-    <div className='Project'>
+    <>
       <h3>{props.title}</h3>
-      <ul>{techlist}</ul>
-      <img src={props.imgSrc} alt={props.imgAlt}></img>
-    </div>
-    );
-  }
+      <p>{props.summary}</p>
+      <ul>{list}</ul>
+      <img src={props.imageSrc} alt={props.imageAlt}/>
+    </>
+  );
+}
+
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  techList: PropTypes.arrayOf(PropTypes.string).isRequired,
+  imageSrc: PropTypes.string,
+  imageAlt: PropTypes.string
+};
   
 export default Project;
