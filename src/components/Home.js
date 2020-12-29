@@ -17,8 +17,7 @@ function Home(){
       <Project className='project-odd'
                title='This Website'
                summary='It is a simple website to have more practice with react, build and test my chatbot, and showcase my projects.'
-               techList={['React', 'Javascript', 'HTML', 'CSS']}
-               imageSrc='' imageAlt='GIF of website'/>
+               techList={['React', 'Javascript', 'HTML', 'CSS']}/>
 
       {/* Project Checklist */}
       <Project className='project-even'
