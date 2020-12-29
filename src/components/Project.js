@@ -6,12 +6,12 @@ function Project(props){
   );
   
   return(
-    <>
+    <div className={props.className}>
       <h3>{props.title}</h3>
       <p>{props.summary}</p>
       <ul>{list}</ul>
       <img src={props.imageSrc} alt={props.imageAlt}/>
-    </>
+    </div>
   );
 }
 
