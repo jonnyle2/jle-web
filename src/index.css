@@ -12,15 +12,26 @@ code {
     monospace;
 }
 
+/* When #root doesn't cover entire height */
 html {
-  background-color: #4B5267;
+  background-color: #383e4d;
 }
 
 #root {
   color: white;
-  background-color: #4B5267;
+  background-color: #383e4d;
 }
 
-#root p > a{
+#root a{
   color: #FFAF87;
+}
+
+#root .btn {
+  background-color: #e79870;
+  border: none;
+}
+
+#root .form-control:focus {
+  border-color: #FFAF87;
+  box-shadow: 0 0 0 0.2rem #ffaf874b;
 }
