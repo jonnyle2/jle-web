@@ -3,8 +3,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const Contact = require('./models/contacts');
+const { user, pass, dbname } = require('./sensitive');
 
-const MONGODB_URL = '...'
+const MONGODB_URL = `mongodb+srv://${user}:${pass}@cluster0.ptfkc.mongodb.net/${dbname}?retryWrites=true&w=majority`;
 
 mongoose.connect(MONGODB_URL, {useNewUrlParser: true, useUnifiedTopology: true})
 .then(_ => console.log("DB connected"))
