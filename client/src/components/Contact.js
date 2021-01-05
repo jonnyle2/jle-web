@@ -71,6 +71,12 @@ function Contact(props){
           </Row>
         </Col>
         <Col className='form-contacts' md>
+        {show ? <Alert variant='success' onClose={_ => setShow(false)} dismissible>
+            <Alert.Heading>Message Sent!</Alert.Heading>
+            <p>
+              Thank you for sending a message. I will get back to you as soon as possible.
+            </p>
+          </Alert> : null }
           <Form noValidate validated={validated} onSubmit={handleOnSubmit}>
             <Form.Row>
               <Col>
@@ -98,13 +104,6 @@ function Contact(props){
               Submit
             </Button>
           </Form>
-          {show ? <Alert variant='success' onClose={_ => setShow(false)} dismissible>
-            <Alert.Heading>Message Sent!</Alert.Heading>
-            <p>
-              Thank you for sending a message. I will get back to you as soon as possible. <br/>
-              - Jonny
-            </p>
-          </Alert> : null }
         </Col>
       </Row>
     </div>
