@@ -1,13 +1,14 @@
 import {BrowserRouter, Switch, Route, NavLink} from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+// import { Navbar, Nav } from 'react-bootstrap';
 import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
+// import About from './components/About';
+// import Contact from './components/Contact';
 import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
+      {/*
       <Navbar expand='sm' fixed='top'>
         <Navbar.Toggle aria-controls='basic-navbar-nav'/>
         <Navbar.Collapse>
@@ -18,11 +19,11 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-
+      */}
       <Switch>
-        <Route exact path='/'><Home /></Route>
-        <Route path='/about'><About /></Route>
-        <Route path='/contact'><Contact /></Route>
+          <Route exact path='/'><Home /></Route>
+          {/* <Route path='/about'><About /></Route>
+          <Route path='/contact'><Contact /></Route> */}
       </Switch>
     </BrowserRouter>
   );
