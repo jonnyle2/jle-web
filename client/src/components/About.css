@@ -1,0 +1,10 @@
+.About {
+    padding: 5rem 0 0 0;
+}
+
+/* couples portrait */
+h2 + p + img.img-fluid {
+    max-width: 25%;
+    display: block;
+    margin: auto;
+}
