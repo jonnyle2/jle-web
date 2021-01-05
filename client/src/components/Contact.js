@@ -1,10 +1,11 @@
 import './Contact.css';
 import PropTypes from 'prop-types';
-import { Row, Col, Form, Button } from 'react-bootstrap';
+import { Alert, Row, Col, Form, Button } from 'react-bootstrap';
 import { useState } from 'react';
+import postContact from '../api/ContactApi';
 
 function Contact(props){
-  // State holds form input
+  // state holds form input
   const [contact, setContact] = useState({
     name: "",
     email: "",
@@ -12,7 +13,11 @@ function Contact(props){
     message: ""
   });
 
+  // state holds isValid state
   const [validated, setValidated] = useState(false);
+
+  // state holds alert visibility
+  const [show, setShow] = useState(false);
 
   const handleContactOnChange = (event) => {
     const {name, value} = event.target;
@@ -20,18 +25,26 @@ function Contact(props){
       ...prev,
       [name]: value
     }));
-  }
+  };
 
   const handleOnSubmit = (event) => {
+    event.preventDefault();
     const form = event.currentTarget;
-    if(form.checkValidity() === false){
-      event.preventDefault();
+    if(form.checkValidity() === false) {
       event.stopPropagation();
+      setValidated(true);
+    } else {
+      postContact(contact);
+      setShow(true);
+      setValidated(false);
+      setContact({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
     }
-
-    setValidated(true);
-    
-  }
+  };
 
   return (
     <div className='Contact'>
@@ -85,6 +98,13 @@ function Contact(props){
               Submit
             </Button>
           </Form>
+          {show ? <Alert variant='success' onClose={_ => setShow(false)} dismissible>
+            <Alert.Heading>Message Sent!</Alert.Heading>
+            <p>
+              Thank you for sending a message. I will get back to you as soon as possible. <br/>
+              - Jonny
+            </p>
+          </Alert> : null }
         </Col>
       </Row>
     </div>
