@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Image, Row, Col } from 'react-bootstrap';
 
 function Project(props){
   const list = props.techList.map((tech, index) =>
@@ -6,11 +7,15 @@ function Project(props){
   );
   
   return(
-    <div className={props.className}>
-      <h3>{props.title}</h3>
-      <p>{props.summary}</p>
-      <ul>{list}</ul>
-      <img src={props.imageSrc} alt={props.imageAlt}/>
+    <div className={props.className + ' project'}>
+      <Row>
+        <Col md>
+          <h4>{props.title}</h4>
+          <p>{props.summary}</p>
+          <ul>{list}</ul>
+        </Col>
+        {props.imageSrc ? <Col md><Image src={props.imageSrc} alt={props.imageAlt} fluid/></Col> : null}
+      </Row>
     </div>
   );
 }
