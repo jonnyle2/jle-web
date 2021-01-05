@@ -1,5 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# --- client/ ---
+
 # dependencies
 client/node_modules
 client/.pnp
@@ -25,6 +27,8 @@ client/yarn-error.log*
 
 client/.eslintcache
 
+# --- api/ ---
+
 # dependencies
 api/node_modules
 api/.pnp
@@ -48,3 +52,17 @@ api/yarn-debug.log*
 api/yarn-error.log*
 
 api/.eslintcache
+
+# sensitive
+api/sensitive.js
+
+# --- chatbot ---
+
+# models
+chatbot/models
+
+# virtual env
+chatbot/venv
+
+# pycache
+chatbot/actions/__pycache__
