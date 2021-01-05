@@ -1,11 +1,98 @@
-.Home {
-    padding: 4rem 0 0 0;
+.Home-body {
+    margin: auto;
+    max-width: 900px;
+}
+
+/* self-portrait */
+header img {
+    margin: auto;
+    display: block;
+    max-width: 250px;
+    border: solid #383e4d;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+header h4 {
+    margin-bottom: 300px;
+    font-size: 2rem;
+}
+
+.about {
+    font-style: normal;
+    font-size: x-large;
+    display: block;
+    padding-bottom: 1rem;
 }
 
 header p {
     font-style: italic;
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
 }
 
-img {
-    max-width: 50%;
+h4, h1, h2 {
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    padding-top: 89px;
+    margin-bottom: 2rem;
+}
+
+header * {
+    position: relative;
+}
+
+/* allow opacity of bg-img */
+header::before {
+    content: '';
+    background-image: url(./resources/background-img-cropped.jpg);
+    background-repeat: no-repeat;
+    background-size: fixed;
+    background-position: top;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.Home-body > h2 {
+    padding-top: 2rem;
+}
+
+.project-odd, .Home-body > h2 {
+    background-color:#3f6089;
+    margin: 0;
+}
+
+.project-even {
+    background-color: #638bb7;
+}
+
+div.row {
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    align-self: center;
+}
+
+div.col-md {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.project {
+    padding: 2rem 2rem;
 }
