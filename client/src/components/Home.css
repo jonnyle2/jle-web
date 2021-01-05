@@ -88,11 +88,6 @@ div.row {
     align-self: center;
 }
 
-div.col-md {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .project {
     padding: 2rem 2rem;
 }
