@@ -1,3 +1,32 @@
 .Contact {
-    padding: 4rem 0 0 0;
+    padding-top: 2rem;
+    background-color: #383e4d;
+}
+
+h2 + div.row {
+    padding-top: 1rem;
+}
+
+.contact-list .row {
+    padding-bottom: 1rem;
+}
+
+.contact-list ul {
+    list-style: none;
+}
+
+.contact-list > .row > .col {
+    flex-grow: unset;
+}
+
+.contact-list > .row > .col + .col ul {
+    padding-left: 0;
+}
+
+button.btn {
+    margin-bottom: 1rem;
+}
+
+div.invalid-feedback {
+    font-size: 90%;
 }
