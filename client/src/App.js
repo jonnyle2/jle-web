@@ -1,4 +1,4 @@
-import {BrowserRouter, Switch, Route, NavLink} from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // import { Navbar, Nav } from 'react-bootstrap';
 import Home from './components/Home';
 // import About from './components/About';
