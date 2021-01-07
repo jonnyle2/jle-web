@@ -2,32 +2,49 @@ version: "2.0"
 
 intents:
   - greet
+  - doing_well
+  - doing_bad
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - chitchat
+  - faq
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+  - text: "Hey, how are you?"
+  - text: "Hello, how is it going?"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "See you later."
+  - text: "Come back soon!"
+  - text: "Have a good day!"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_chitchat/bot_challenge:
+  - text: "I am Jonny's chatbot and I have not been named yet. I can answer some questions about Jonny."
+
+  utter_chitchat/ask_doing:
+  - text: "I am doing well. Thank you for asking!"
+  - text: "It has been great! Thank you for asking."
+
+  utter_faq/ask_career:
+  - text: "Jonny is open to any position in programming, development, software, and more."
+
+  utter_faq/ask_education:
+  - text: "Jonny graduated with a bachelors of science in computer science at the University of Texas at Dallas."
+
+  utter_glad:
+  - text: "That is great to hear! If there is anything I can do to make it better, do not hesitate to ask."
+
+  utter_support:
+  - text: "I am sorry to hear. If there is anything I can do, ask right away or send Jonny a message. Do not be afraid to ask for help!"
+
+  utter_how_help:
+  - text: "What can I do for you today?"
+  - text: "How can I help you today?"
+
+  utter_fallback:
+  - text: "I am sorry I do not understand but I am constantly learning. Please try rephrasing."
 
 session_config:
   session_expiration_time: 60

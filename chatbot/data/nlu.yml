@@ -9,36 +9,117 @@ nlu:
     - hello there
     - good morning
     - good evening
-    - moin
     - hey there
-    - let's go
     - hey dude
     - goodmorning
     - goodevening
     - good afternoon
+    - greetings
+
+- intent: doing_well
+  examples: |
+    - good
+    - great
+    - fine
+    - well
+    - okay
+    - I've been good
+    - I'm fine
+    - I'm doing well
+    - I'm feeling great
+    - I'm okay
+
+- intent: doing_bad
+  examples: |
+    - bad
+    - sick
+    - not good
+    - not well
+    - I'm not doing good
+    - I'm not okay
+    - I'm not feeling well
+    - feeling under the weather
+    - it has been bad
+    - not the greatest
 
 - intent: goodbye
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
+    - cya
     - good night
+    - goodnight
     - bye
     - goodbye
     - have a nice day
     - see you around
     - bye bye
     - see you later
+    - see ya
+
+- intent: chitchat/bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - what are you?
+    - do you have a name?
+    - what do people call you?
+    - what's your name?
+    - what is your name?
+    - can i get your name?
+    - may i have your name?
+
+- intent: chitchat/ask_doing
+  examples: |
+    - how are you doing?
+    - how have you been?
+    - how is life?
+    - what's up?
+    - what is up?
+    - how's life?
+    - how are you?
+    - wassup?
+    - whatup?
+    - how has it been?
+
+- intent: faq/ask_career
+  examples: |
+    - what kind of job is Jonny looking for?
+    - what job is he looking for?
+    - what do you see yourself working as?
+    - what kind of job are you looking for?
+    - what position is Jonny seeking?
+    - what position is he looking for?
+    - what position are you looking for?
+    - what job position is Jonny seeking?
+    - what kind of job is he looking for?
+
+- intent: faq/ask_education
+  examples: |
+    - what is Jonny's highest education?
+    - what is his most recent education?
+    - what is your education?
+    - has Jonny graduated?
+    - have you graduated?
+    - where did you graduate?
+    - where did Jonny graduate from?
+    - what school did he graduate from?
+    - tell me about his education
+    - tell me about Jonny's education
 
 - intent: affirm
   examples: |
     - yes
     - y
+    - yeah
     - indeed
     - of course
-    - that sounds good
     - correct
+    - yea
+    - yep
+    - right
+    - that's right
 
 - intent: deny
   examples: |
@@ -46,47 +127,8 @@ nlu:
     - n
     - never
     - I don't think so
-    - don't like that
     - no way
     - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - nope
+    - nah
+    - noo
