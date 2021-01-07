@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 // import About from './components/About';
 // import Contact from './components/Contact';
+import { Widget } from 'rasa-webchat';
 import './App.css';
 
 function App() {
@@ -20,6 +21,14 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       */}
+
+      <Widget
+        socketUrl={'http://localhost:5005'}
+        socketPath={'/socket.io/'}
+        customData={{"language": "en"}}
+        title={"Jonny's bot 🤖"}
+      />
+
       <Switch>
           <Route exact path='/'><Home /></Route>
           {/* <Route path='/about'><About /></Route>
