@@ -1,3 +1,4 @@
+import React from 'react';
 import './Contact.css';
 import PropTypes from 'prop-types';
 import { Alert, Row, Col, Form, Button } from 'react-bootstrap';
