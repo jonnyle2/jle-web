@@ -21,7 +21,7 @@ responses:
   - text: "Have a good day!"
 
   utter_chitchat/bot_challenge:
-  - text: "I am Jonny's chatbot and I have not been named yet. I can answer some questions about Jonny."
+  - text: "I am Jonny's assistant. I am a chatbot and was created using Rasa Open Source. Currently, I can answer some questions about Jonny."
 
   utter_chitchat/ask_doing:
   - text: "I am doing well. Thank you for asking!"
@@ -34,10 +34,10 @@ responses:
   - text: "Jonny graduated with a bachelors of science in computer science at the University of Texas at Dallas."
 
   utter_glad:
-  - text: "That is great to hear! If there is anything I can do to make it better, do not hesitate to ask."
+  - text: "That is great to hear! If you have any questions, I will do my best to answer them."
 
   utter_support:
-  - text: "I am sorry to hear. If there is anything I can do, ask right away or send Jonny a message. Do not be afraid to ask for help!"
+  - text: "I am sorry to hear. If there is anything I can do to make it better, ask right away!"
 
   utter_how_help:
   - text: "What can I do for you today?"
