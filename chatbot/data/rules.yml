@@ -1,6 +1,10 @@
 version: "2.0"
 
 rules:
+- rule: welcome on init
+  steps:
+  - intent: welcome
+  - action: utter_welcome
 
 - rule: respond to FAQs
   steps:

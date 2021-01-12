@@ -9,8 +9,12 @@ intents:
   - deny
   - chitchat
   - faq
+  - welcome
 
 responses:
+  utter_welcome:
+  - text: "Welcome to Jonny's website! I will be right here if you need anyhting."
+
   utter_greet:
   - text: "Hey, how are you?"
   - text: "Hello, how is it going?"
