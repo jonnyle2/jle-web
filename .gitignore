@@ -58,6 +58,9 @@ api/sensitive.js
 
 # --- chatbot ---
 
+# models
+chatbot/models
+
 # virtual env
 chatbot/venv
 
