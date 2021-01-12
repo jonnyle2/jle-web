@@ -29,12 +29,14 @@ function App() {
     // </BrowserRouter>
     <div className='App'>
       <Widget
+        initPayload={"/welcome"}
         socketUrl={'http://localhost:5005'}
         socketPath={'/socket.io/'}
         customData={{"language": "en"}}
-        title={"Jonny's bot 🤖"}
+        title={"Jonny's chatbot 🤖"}
         displayUnreadCount={true}
         showFullScreenButton={true}
+        params={{storage: "session"}}
       />
       <Home />
     </div>
